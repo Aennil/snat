@@ -1,0 +1,67 @@
+\documentclass{article}
+  
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\usepackage{titling}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+
+\begin{document}
+
+\title{Snatulerianbumine}
+\subtitle{Kravspecifikation}
+\author{Linnea Faxen linfa440, Joakim Johnander joajo445, Hector Leong hecle103, \\ 
+Niklas Madsen nikma205, Jonas Hellman jonhe002, Feras Faez Elias ferfa760}
+\maketitle
+\newpage
+\renewcommand*
+\contentsname{Innehållsförteckning}
+
+\tableofcontents
+\newpage
+
+\section{Sammanfattning}
+Detta är en kravspecifikation för projektet i kursen TDDC76 - Programmering och datastrukturer. I detta projekt ska denna grupp skapa ett spel som kan spelas av 2-6 spelare. Spelaren styr varsin orm och ska överleva längre än sin motspelare. Detta dokument förklarar nedan mer ingående vilka regler som finns i spelet, delar upp spelet i absoluta krav och tilläggsfunktionalitet, hur användargränssnittet ska se ut, hur lagringen går till och vilka begränsingar spelet har. 
+
+\section{Systembeskrivning}
+Systemet är ett spel som används för att ha roligt. Spelet går ut på att två till sex spelare styr varsin orm som ska överleva längre än de andras ormar. Ormarna styrs genom att spelarna får välja två knappar var för att styra sin orm höger, respektive vänster. Om man krockar i en annan orm dör ens orm och om man åker utanför kanten så dör man. Till en början är ormen kort men om man äter mat som finns utplacerad på banan blir ormen längre. Ibland dyker det upp power-ups på banan som kan ge ormen olika fördelar om den plockar upp dem. 
+
+\section{Användargränssnitt}
+Spelet kommer att ha ett grafiskt gränssnitt med en meny där man kan välja antal spelare, knappar för att styra sin orm och starta spelet. Detta sköts med muspekaren. När spelet väl startat styrs det med tangentbordet.
+
+\newpage
+
+\section{Systemfunktioner}
+Absoluta krav:
+\begin{enumerate}
+\item En meny ska ritas ut.
+\item Menyn ska kunna registrera muspekar-klick och tangenttryck.
+\item Spelbanan med ormar ska ritas ut.
+\item Ormarna ska styras med tangentbordet.
+\item Kollissionsdetektering ska finnas. (Krock mot vägg, krock mot orm, krock mot power-ups)
+\item Spelet kan vinnas. (Genom kollission)
+\item Det ska finnas power-ups som kan dyka upp på banan.
+\end{enumerate} 
+Tilläggsfunktionalitet:
+\begin{enumerate}
+\item Fler power-ups.
+\item Hinder som kan dyka upp på banan och vara i vägen.
+\item AI, en orm som styrs av datorn man ska vinna mot.
+\item Spelet kan spelas över internet. 
+\item Spelmusik och ljudeffekter.
+\item Fler inställningar i menyn. (Storlek på banan, namn på spelare, färg på masken)
+\end{enumerate}
+
+\section{Lagring}
+Varje spelomgång kan döpas och antalet spelare samt vem som vann sparas. Denna spelomgång kan sedan öppnas och fortsätta spelas utan att poängställningen förloras. Systemet sparar på fil efter varje match. 
+
+\section{Begränsningar}
+Spelet hanterar 2-6 spelare men inte fler. Om tangentbordet inte klarar av att registrera tillräckligt många knapptryck för antalet spelare så kan inte spelet hantera detta. 
+
+\end{document}

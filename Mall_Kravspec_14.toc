@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Sammanfattning}{3}
+\contentsline {section}{\numberline {2}Systembeskrivning}{3}
+\contentsline {section}{\numberline {3}Anv\IeC {\"a}ndargr\IeC {\"a}nssnitt}{3}
+\contentsline {section}{\numberline {4}Systemfunktioner}{4}
+\contentsline {section}{\numberline {5}Lagring}{4}
+\contentsline {section}{\numberline {6}Begr\IeC {\"a}nsningar}{4}
